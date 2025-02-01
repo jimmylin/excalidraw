@@ -3,7 +3,7 @@ replicaCount: 1
 
 # Docker image settings
 image:
-  repository: excalidraw/excalidraw
+  #repository: excalidraw/excalidraw
   #tag: sha-427a76b
   pullPolicy: IfNotPresent
 
