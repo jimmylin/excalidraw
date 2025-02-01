@@ -10,7 +10,7 @@
       "matchStrings": [
         "tag:\\s*\"?(?<currentValue>sha-[a-f0-9]+)\"?"
       ],
-      "datasourceTemplate": "docker",
+      "datasourceTemplate": "helm",
       "depNameTemplate": "excalidraw/excalidraw",
       "versioning": "regex",
       "extractVersion": "^sha-(?<version>[a-f0-9]+)$"
