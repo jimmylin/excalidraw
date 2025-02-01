@@ -1,0 +1,40 @@
+# Default number of replicas
+replicaCount: 1
+
+# Docker image settings
+image:
+  repository: excalidraw/excalidraw
+  tag: sha-c1488fa
+  pullPolicy: IfNotPresent
+
+# Service settings
+service:
+  type: ClusterIP
+  port: 80
+
+# Ingress configuration
+ingress:
+  enabled: true
+  annotations: {}
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []  # Example: [{ secretName: my-tls-secret, hosts: [chart-example.local] }]
+
+# Resources for the container (optional)
+resources: {}
+
+# Node scheduling (optional)
+nodeSelector: {}
+
+# Tolerations for the pod (optional)
+tolerations: []
+
+# Affinity rules (optional)
+affinity: {}
+
+# Optional overrides for names
+nameOverride: ""
+fullnameOverride: ""
