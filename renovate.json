@@ -11,9 +11,7 @@
         "tag:\\s*\"?(?<currentValue>sha-[a-f0-9]+)\"?"
       ],
       "datasourceTemplate": "helm",
-      "depNameTemplate": "excalidraw/excalidraw",
-      "versioning": "regex",
-      "extractVersion": "^sha-(?<version>[a-f0-9]+)$"
+      "depNameTemplate": "excalidraw/excalidraw"
     }
   ]
 }
