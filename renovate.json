@@ -2,10 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ]
-,
-  "regexManagers": [
+  ],
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["values.yaml"],
       "matchStrings": [
         "tag:\\s*\"?(?<currentValue>sha-[a-f0-9]+)\"?"
