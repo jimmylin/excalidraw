@@ -3,8 +3,8 @@ replicaCount: 1
 
 # Docker image settings
 image:
-  repository: excalidraw/excalidraw@sha256
-  tag: 268715464bd95329641d62f067f98ce2aa72acf0745a64388f3074e728d8027d
+  repository: excalidraw/excalidraw
+  tag: sha256:268715464bd95329641d62f067f98ce2aa72acf0745a64388f3074e728d8027d
   pullPolicy: IfNotPresent
 
 # Service settings
