@@ -3,4 +3,17 @@
   "extends": [
     "config:recommended"
   ]
+,
+  "regexManagers": [
+    {
+      "fileMatch": ["values.yaml"],
+      "matchStrings": [
+        "tag:\\s*\"?(?<currentValue>sha-[a-f0-9]+)\"?"
+      ],
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "excalidraw/excalidraw",
+      "versioning": "regex",
+      "extractVersion": "^sha-(?<version>[a-f0-9]+)$"
+    }
+  ]
 }
