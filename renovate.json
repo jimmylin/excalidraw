@@ -18,8 +18,7 @@
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["excalidraw/excalidraw"],
-      "automerge": true,
-      "automergeType": "branch"
+      "versioning": "loose"
     }
   ]
 }
