@@ -5,5 +5,8 @@
   ],
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
-  }
+  },
+  "automerge": true,
+  "automergeType": "branch",
+  "automergeStrategy": "auto"
 }
