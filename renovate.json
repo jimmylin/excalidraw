@@ -8,7 +8,7 @@
     "pinDigests": false
   },
   "automerge": true,
-  "automergeType": "branch",
+  "automergeType": "pr",
   "automergeStrategy": "auto",
   "requiredStatusChecks": ["Scan Docker Image before Merging"],
   "packageRules": [
