@@ -8,5 +8,6 @@
   },
   "automerge": true,
   "automergeType": "branch",
-  "automergeStrategy": "auto"
+  "automergeStrategy": "auto",
+  "requiredStatusChecks": ["Scan Docker Image before Merging"]
 }
