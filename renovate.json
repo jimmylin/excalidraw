@@ -1,22 +1,34 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": [
+    "mergeConfidence:all-badges",
+    "config:recommended"
+  ],
   "kubernetes": {
-    "fileMatch": ["\\.yaml$"]
-  },
-  "docker": {
-    "pinDigests": false
+    "fileMatch": [
+      "\\.yaml$"
+    ]
   },
   "automerge": true,
   "automergeType": "pr",
   "automergeStrategy": "auto",
-  "requiredStatusChecks": ["Scan Docker Image before Merging"],
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
-      "matchManagers": ["regex"],
-      "matchUpdateTypes": ["digest"],
-      "fileMatch": ["deployment\\.yaml$"],
+      "matchCategories": [
+        "docker"
+      ],
+      "pinDigests": false
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "matchUpdateTypes": [
+        "digest"
+      ],
       "enabled": true,
       "automerge": true
     }
