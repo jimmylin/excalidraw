@@ -28,9 +28,6 @@
       "matchUpdateTypes": [
         "digest"
       ],
-      "fileMatch": [
-        "deployment\\.yaml$"
-      ],
       "enabled": true,
       "automerge": true
     }
