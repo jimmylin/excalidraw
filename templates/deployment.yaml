@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: excalidraw/excalidraw@sha256:03146468df779bae984a60b0c88dd00cc66b9bfd3acafb119ec3fd1f27a24d0a
+          image: excalidraw/excalidraw@sha256:f771e6ec4cf117163c9a0adf7219dd523764f7463012c8eb4238d13c408e16f2
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 80
