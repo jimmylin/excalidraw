@@ -46,7 +46,7 @@ jobs:
 
       - name: Upload Scan Report (if failed)
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: trivy-scan-report
           path: trivy-results.txt
